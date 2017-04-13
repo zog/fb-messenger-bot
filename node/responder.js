@@ -25,8 +25,8 @@ Responder.register = (test, callback, opts=null) => {
     opts = {}
   }
   console.log(`registering ${test}`)
-  weight = opts.weight || 0
-  candidate = new Responder(test, callback, opts)
+  const weight = opts.weight || 0
+  const candidate = new Responder(test, callback, opts)
   if(Responder.candidates[weight] === undefined){
     Responder.candidates[weight] = []
   }
