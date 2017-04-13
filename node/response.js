@@ -1,3 +1,5 @@
+'use strict'
+
 const
   request = require('request'),
   config = require('config')

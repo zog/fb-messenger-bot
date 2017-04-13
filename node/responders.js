@@ -1,3 +1,5 @@
+'use strict'
+
 const responder = require('./responder').Responder
 const response = require('./response').Response
 
