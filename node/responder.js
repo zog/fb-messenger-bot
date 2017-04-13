@@ -36,9 +36,9 @@ Responder.register = (test, callback, opts=null) => {
 Responder.respond = (event) => {
   const senderID = event.sender.id
   const message = event.message
-  for(index in Responder.candidates){
+  for(let index in Responder.candidates){
     let candidatesList = Responder.candidates[index]
-    for(candidate of candidatesList){
+    for(let candidate of candidatesList){
       if(candidate.match(event, message)){
         const _response = new response.Response(senderID)
         return candidate.answer(event, message, _response)
